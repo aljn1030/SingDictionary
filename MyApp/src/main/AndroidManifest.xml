@@ -5,11 +5,11 @@
     <application
         android:name=".LitepalApp"
         android:allowBackup="true"
-        android:icon="@mipmap/icon_book"
+
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Aty.WelcomeAty">
+        <activity android:name=".Aty.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Aty.DetailAty"/>
-        <activity android:name=".Aty.MainActivity"/>
+
     </application>
 
 </manifest>

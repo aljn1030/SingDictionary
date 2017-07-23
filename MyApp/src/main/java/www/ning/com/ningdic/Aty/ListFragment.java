@@ -4,17 +4,13 @@ import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
-import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -33,8 +29,7 @@ import www.ning.com.ningdic.Utils.LoadFiles;
 public class ListFragment extends Fragment {
     private List<String> list;
     private BaseAdapter adapter;
-    private EditText et;
-    private ImageView searchbutton;
+
     private View view;
     private ListView lv;
 
@@ -87,7 +82,7 @@ public class ListFragment extends Fragment {
             public View getView(int position, View convertView, ViewGroup parent) {
                 TextView tv = new TextView(getActivity());
                 tv.setText(list.get(position));
-                tv.setPadding(10, 12, 0, 12);
+                tv.setPadding(15, 12, 0, 12);
                 convertView = tv;
                 return convertView;
             }
@@ -98,29 +93,11 @@ public class ListFragment extends Fragment {
 
     private void findView() {
         lv = (ListView) view.findViewById(R.id.listview_list);
-        searchbutton = (ImageView) view.findViewById(R.id.list_search);
-        et = (EditText) view.findViewById(R.id.et_list);
+
     }
 
     private void initEvent() {
-        searchbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (TextUtils.isEmpty(et.getText())) {
-                    Toast.makeText(getActivity(), "请输入", Toast.LENGTH_SHORT).show();
-                } else {
-                    String a = new String();
-                    for (int i = 0; i < list.size(); i++) {
-                        if (et.getText().toString().equals(list.get(i))) {
-                            a = list.get(i);
-                            list.clear();
-                            list.add(a);
-                            adapter.notifyDataSetChanged();
-                        }
-                    }
-                }
-            }
-        });
+
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
