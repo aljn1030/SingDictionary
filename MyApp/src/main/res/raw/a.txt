@@ -1,0 +1,286 @@
+﻿{
+    "items": [
+        {
+            "name": "act blur",
+            "definition": "装傻
+To play innocent  ",
+            "content": "I know you know who did it, so don’t act blur!"
+        },
+        {
+            "name": "agak-agak",
+            "definition": "衡量
+Malay term meaning to estimate",
+            "content": "Don't talk so bad about him. Agak tarek a bit and give him some face, lah."
+        },
+        {
+            "name": "ah beng",
+            "definition": "阿明（流里流气的市井小民）
+An unsophisticated Chinese boy, usually Hokkien. Stereotypically, he speaks gutter hokkien and likes neon-coloured clothes, spiky, moussed hair and accessories such as handphones or pagers, all of which are conspicuously displayed. He also likes to squat, even when a seat is available.",
+            "content": "Wah lao eh, why you so chao ah beng one?"
+        },
+        {
+             "name": "alamak",
+             "definition": "An Malay expression of dismay, surprise or alarm.",
+             "content": "Alamak! Why you go and do this sort of stupid thing?"
+         }
+         ,
+         {
+              "name": "ai si",
+              "definition": "想死
+Literally, want to die. Courting disaster.  ",
+              "content": "Ai si, ah?"
+         }
+         ,
+         {
+               "name": "boh liao",
+               "definition": "无聊
+Hokkien for nothing better to do. Dangerously idle. In Mandarin, it's wuliao.  ",
+               "content": "What for he go and do that sort of thing? Must be damn bo liao."
+         }
+,
+         {
+               "name": "boh say",
+               "definition": "没那个样子
+Hokkien phrase meaning doesn't have the look.  ",
+               "content": "That kind also can be occifer ah? Damn boh say, leh!"
+         }
+,
+         {
+               "name": "boleh",
+               "definition": "可以
+Malay for can or possible.",
+               "content": "You do my way, sure boleh one."
+         }
+,
+         {
+               "name": "botak",
+               "definition": "光头
+ Malay for bald",
+               "content": "Which one is Mr. Tan? He's that botak head sitting over there."
+         }
+,
+         {
+               "name": "bodoh",
+               "definition": "笨蛋
+Malay for stupid or fool.",
+               "content": "Salim is such a bodoh. When he lit his cigarette, he set his eyebrows on fire."
+         }
+,
+         {
+               "name": "can",
+               "definition": "可以
+Monosyllabic answer denoting one’s ability to fulfil a requested task.",
+               "content": " "
+         }
+,
+         {
+               "name": "cheoh",
+               "definition": "叫
+An informal invitation to some activity.",
+               "content": "Wah lao! You all yesterlay go Zouk nair cheoh me one."
+         }
+,
+         {
+               "name": "cher",
+               "definition": "老师
+Not to be confused with the surgically-enhanced American singer, this is just a short and snappy way to address one's teacher.",
+               "content": "Eskew me, Cher, can I go toilet?"
+         }
+,
+         {
+               "name": "chio bu",
+               "definition": "靓妹
+A pretty woman. A somewhat rude term",
+               "content": "Far East Plaza got a lot of chio bu."
+         }
+,
+         {
+               "name": "chiong",
+               "definition": "冲
+Hokkien for to rush forward.",
+               "content": "Eh, today after work, go where and chiong"
+         }
+,
+         {
+               "name": "die die",
+               "definition": "一定，死死
+To go all out, with no possibility of non-compliance. ",
+               "content": "I promise die die will pay you back tomorrow."
+         }
+,
+         {
+               "name": "han na",
+               "definition": "够了
+Local exclamation meaning Enough already!",
+               "content": " "
+         }
+,
+         {
+               "name": "hao lian",
+               "definition": "嚣张
+Arrogant, cocky or smug. Can be used as a verb.",
+               "content": "That asshole is si peh hao lian."
+         }
+,
+         {
+               "name": "heong",
+               "definition": "强
+Hokkien for strong",
+               "content": "Wah lau, his B.O. is damn heong."
+         }
+,
+         {
+               "name": "hor",
+               "definition": "Another Singlish tag, used like a punctuation mark.",
+               "content": "He, hor, very kan cheong one."
+         }
+,
+         {
+               "name": "Kkan cheong",
+               "definition": "紧张
+A Cantonese and Hokkien term meaning nervous, harried or uptight.",
+               "content": "Your exam in June, now only March, you kan-cheong for what?"
+         }
+,
+         {
+               "name": "kiasi",
+               "definition": "怕死
+Hokkien term literally meaning, afraid of death.",
+               "content": "Raining only, cannot go out, meh? Why you so kiasi one?"
+         }
+,
+         {
+               "name": "kiasu",
+               "definition": "怕输
+Hokkien adjective literally meaning, afraid of losing.",
+               "content": "You went to get a handicapped sticker just to chope a parking space? How kiasu can you get?"
+         }
+,
+         {
+               "name": "kongsi",
+               "definition": "分享
+Hokkien for share.",
+               "content": "This football, me and my brother kongsi one."
+         }
+,
+         {
+               "name": "lah",
+               "definition": "啦
+The ubiquitous Singlish tag. Used like a fullstop in a sentence.",
+               "content": " "
+         }
+,
+         {
+               "name": "lui",
+               "definition": "钱
+A uniquely Singaporean word. Meaning money",
+               "content": "Boh lui, mai kong lah! "
+         }
+,
+         {
+               "name": "mah fan",
+               "definition": "麻烦
+Mandarin for bother or bothersome",
+               "content": "Why you always come and mah fan me one?"
+         }
+,
+         {
+               "name": "mata",
+               "definition": "警察
+The police.",
+               "content": " "
+         }
+,
+         {
+               "name": "nor chat",
+               "definition": "还没
+The local pronunciation of not yet",
+               "content": "Eh, you finish your homework or not?"
+         }
+,
+         {
+               "name": "obiang",
+               "definition": "To be embarrassingly out of fashion.",
+               "content": "Check out his bell-bottoms! Super obiang, man!"
+         }
+,
+         {
+               "name": "pai kia",
+               "definition": "坏孩子
+Hokkien phrase which literally means bad kid",
+               "content": "You go and mix with all those pai kia, one day sure kena sai."
+         }
+,
+         {
+               "name": "rojak",
+               "definition": "罗惹
+A salad of mixed vegetables taken with sauce. Of Malay origin, it has been adapted by all races. In Singlish, it is used as an adjective, to describe something as being either eclectic, or just plain messy.",
+               "content": "This sort of multi-cultural event, ah, don't plan properly will come out all rojak."
+         }
+,
+         {
+               "name": "sala",
+               "definition": "不对
+Malay for wrong",
+               "content": "His house is over there, not here. You go sala oreddy, lah."
+         }
+,
+         {
+               "name": "say again",
+               "definition": "再说一次
+A pithy request for someone to repeat something.",
+               "content": "I didn’t hear what you just said. Say again?"
+         }
+,
+         {
+               "name": "say some more",
+               "definition": "继续说啊
+Sarcastic warning to another person not to continue their abuse, perhaps even after the argument has ended. ",
+               "content": "Still say some more! Whack you then you know!"
+         }
+,
+         {
+               "name": "see what",
+               "definition": "看什么看
+A belligerent contraction of What are you looking at?",
+               "content": "See what? I break my nose damn funny to look at, meh?"
+         }
+,
+         {
+               "name": "seow",
+               "definition": "疯
+Hokkien for crazy.",
+               "content": "You want to go and talk at Speakers Corner? You seow or what?"
+         }
+,
+         {
+               "name": "shiok",
+               "definition": "Originally a Malay exclamation, but now a universal Singaporean expression denoting extreme pleasure or the highest quality.",
+               "content": "This char kway teow is damn shiok, man!"
+         }
+,
+         {
+               "name": "suay",
+               "definition": "衰
+Hokkien adjective meaning calamity.",
+               "content": "The same day his father died, his wife ran off with his bookie. He si peh sway, man."
+         }
+,
+         {
+               "name": "tum sim",
+               "definition": "贪心
+Hokkien for greedy",
+               "content": "He got so many marbles, still dun wan to share. Why so tum sim one?"
+         }
+,
+         {
+               "name": "wah lau",
+               "definition": "我天
+Probably the most common Singlish expression of all, it is used in much the same way as oh my goodness",
+               "content": "Wah lau eh! How can you do this sort of thing to me"
+         }
+
+
+
+    ]
+}
