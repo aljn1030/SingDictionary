@@ -20,14 +20,12 @@ import www.ning.com.ningdic.Bean.FavoriteBean;
 import www.ning.com.ningdic.R;
 import www.ning.com.ningdic.Utils.LoadFiles;
 
-/**
- * Created by win10 on 2017/1/8.
- */
+
 public class DetailAty extends AppCompatActivity {
     private TextView title, defi, content;
     private String keyWord;
     private ImageView iv, fav_star;
-    private boolean isBeenIn = false;
+    private boolean check = false;
     private String thisTitle = "";
 
     @Override
@@ -36,7 +34,11 @@ public class DetailAty extends AppCompatActivity {
         setContentView(R.layout.detail_page);
         Intent intent = getIntent();
         keyWord = intent.getStringExtra("keyWord");
-        findViews();
+        fav_star = (ImageView) findViewById(R.id.detail_fav);
+        iv = (ImageView) findViewById(R.id.icon_back);
+        title = (TextView) findViewById(R.id.detail_title);
+        defi = (TextView) findViewById(R.id.detail_definition);
+        content = (TextView) findViewById(R.id.detail_content);
         loadData();
         initEvent();
     }
@@ -51,16 +53,16 @@ public class DetailAty extends AppCompatActivity {
         fav_star.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (isBeenIn == true) {
+                if (check == true) {
                     fav_star.setImageResource(R.mipmap.without_star);
                     DataSupport.deleteAll(FavoriteBean.class, "name=?", thisTitle);
-                    isBeenIn = false;
-                } else if (isBeenIn == false) {
+                    check = false;
+                } else if (check == false) {
                     fav_star.setImageResource(R.mipmap.bein_star);
                     FavoriteBean favBean = new FavoriteBean();
                     favBean.setName(thisTitle);
                     favBean.save();
-                    isBeenIn = true;
+                    check = true;
                 }
             }
         });
@@ -86,10 +88,10 @@ public class DetailAty extends AppCompatActivity {
 
                     if (findTitle.size()==0) {
                         fav_star.setImageResource(R.mipmap.without_star);
-                        isBeenIn = false;
+                        check = false;
                     } else {
                         fav_star.setImageResource(R.mipmap.bein_star);
-                        isBeenIn = true;
+                        check = true;
 
                     }
                 }
@@ -104,11 +106,5 @@ public class DetailAty extends AppCompatActivity {
         }
     }
 
-    private void findViews() {
-        fav_star = (ImageView) findViewById(R.id.detail_fav);
-        iv = (ImageView) findViewById(R.id.icon_back);
-        title = (TextView) findViewById(R.id.detail_title);
-        defi = (TextView) findViewById(R.id.detail_definition);
-        content = (TextView) findViewById(R.id.detail_content);
-    }
+
 }

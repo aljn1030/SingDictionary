@@ -19,25 +19,15 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        init();
-        findView();
-        initEvent();
-        list.performClick();
-
-    }
-
-    private void init() {
         manager = getFragmentManager();
-    }
-
-    private void initEvent() {
-        list.setOnClickListener(this);
-        favorite.setOnClickListener(this);
-    }
-
-    private void findView() {
         list = (ImageView) findViewById(R.id.list);
         favorite = (ImageView) findViewById(R.id.favorite);
+        list.setOnClickListener(this);
+        favorite.setOnClickListener(this);
+        list.performClick();
+
+
+
     }
 
     @Override
@@ -45,17 +35,17 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         switch (v.getId()) {
             case R.id.list:
 
-                FragmentTransaction transca1=manager.beginTransaction();
+                FragmentTransaction transac1=manager.beginTransaction();
                 ListFragment listFragment = new ListFragment();
-                transca1.replace(R.id.fragments, listFragment, "list");
-                transca1.commit();
+                transac1.replace(R.id.fragments, listFragment, "list");
+                transac1.commit();
                 break;
             case R.id.favorite:
 
-                FragmentTransaction transca2=manager.beginTransaction();
+                FragmentTransaction transac2=manager.beginTransaction();
                 FavoriteFragment favoriteFragment = new FavoriteFragment();
-                transca2.replace(R.id.fragments, favoriteFragment, "favorite");
-                transca2.commit();
+                transac2.replace(R.id.fragments, favoriteFragment, "favorite");
+                transac2.commit();
                 break;
         }
     }
