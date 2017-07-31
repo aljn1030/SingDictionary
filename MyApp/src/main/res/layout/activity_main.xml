@@ -10,20 +10,17 @@
         android:id="@+id/fragments"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="35dp"
-        android:layout_marginTop="25dp">
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:srcCompat="@mipmap/welcome" />
     </FrameLayout>
     <LinearLayout
         android:layout_alignParentBottom="true"
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="30dp">
+        android:layout_height="30dp"
+        android:id="@+id/linearLayout">
         <ImageView
             android:id="@+id/list"
             android:padding="5dp"

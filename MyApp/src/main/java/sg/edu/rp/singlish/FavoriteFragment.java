@@ -1,4 +1,4 @@
-package www.ning.com.ningdic.Aty;
+package sg.edu.rp.singlish;
 
 import android.app.Fragment;
 import android.content.Intent;
@@ -21,9 +21,9 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-import www.ning.com.ningdic.Bean.FavoriteBean;
+import sg.edu.rp.singlish.Bean.FavoriteBean;
+import sg.edu.rp.singlish.Utils.LoadFiles;
 import www.ning.com.ningdic.R;
-import www.ning.com.ningdic.Utils.LoadFiles;
 
 /**
  * Created by win10 on 2017/1/8.
@@ -38,28 +38,11 @@ public class FavoriteFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.favorite_page, null);
-        findView(view);
-        init();
-        loadData();
-        initEvent();
 
-        return view;
-    }
+        lv = (ListView) view.findViewById(R.id.listview_favorite);
 
-    private void initEvent() {
-
-        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent=new Intent(getActivity(), DetailAty.class);
-                intent.putExtra("keyWord", list.get(position));
-                startActivity(intent);
-            }
-        });
-    }
-
-    private void init() {
         list = new ArrayList<>();
+
         adapter = new BaseAdapter() {
             @Override
             public int getCount() {
@@ -86,14 +69,7 @@ public class FavoriteFragment extends Fragment {
             }
         };
         lv.setAdapter(adapter);
-    }
 
-    private void findView(View view) {
-        lv = (ListView) view.findViewById(R.id.listview_favorite);
-
-    }
-
-    private void loadData() {
         List<FavoriteBean> favData = DataSupport.findAll(FavoriteBean.class);
         InputStream inputStream = getResources().openRawResource(R.raw.a);
         try {
@@ -111,5 +87,18 @@ public class FavoriteFragment extends Fragment {
         } catch (JSONException e) {
             e.printStackTrace();
         }
+
+        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent=new Intent(getActivity(), DetailAty.class);
+                intent.putExtra("keyWord", list.get(position));
+                startActivity(intent);
+            }
+        });
+
+        return view;
     }
+
+
 }

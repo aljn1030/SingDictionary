@@ -6,25 +6,26 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="30dp">
+        android:layout_height="30dp"
+        android:layout_marginTop="25dp">
 
         <ImageView
             android:id="@+id/icon_back"
             android:layout_width="30dp"
             android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
             android:layout_marginLeft="10dp"
             android:padding="5dp"
-            android:layout_alignParentLeft="true"
             android:src="@mipmap/back" />
+
         <ImageView
-            android:layout_marginRight="20dp"
-            android:padding="5dp"
-            android:layout_alignParentRight="true"
+            android:id="@+id/detail_fav"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:id="@+id/detail_fav"
-            android:src="@mipmap/without_star"
-            />
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:padding="5dp"
+            android:src="@mipmap/without_star" />
 
     </RelativeLayout>
 

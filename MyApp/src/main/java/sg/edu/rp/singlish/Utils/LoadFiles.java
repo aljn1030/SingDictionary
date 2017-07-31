@@ -1,4 +1,4 @@
-package www.ning.com.ningdic.Utils;
+package sg.edu.rp.singlish.Utils;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -6,9 +6,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
 
-/**
- * Created by win10 on 2017/1/8.
- */
+
 public class LoadFiles {
     public static String getString(InputStream inputStream) {
         InputStreamReader inputStreamReader = null;

@@ -1,8 +1,6 @@
-package www.ning.com.ningdic.Bean;
+package sg.edu.rp.singlish.Bean;
 
-/**
- * Created by win10 on 2017/1/8.
- */
+
 public class ListBean {
     String name;
     String definition;

@@ -1,11 +1,9 @@
-package www.ning.com.ningdic.Bean;
+package sg.edu.rp.singlish.Bean;
 
 import org.litepal.annotation.Column;
 import org.litepal.crud.DataSupport;
 
-/**
- * Created by win10 on 2017/1/8.
- */
+
 public class FavoriteBean extends DataSupport {
     @Column(unique = true, defaultValue = "unknown")
     private String name;

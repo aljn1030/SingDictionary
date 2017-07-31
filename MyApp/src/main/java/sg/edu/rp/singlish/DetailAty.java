@@ -1,4 +1,4 @@
-package www.ning.com.ningdic.Aty;
+package sg.edu.rp.singlish;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,9 +16,9 @@ import org.litepal.crud.DataSupport;
 import java.io.InputStream;
 import java.util.List;
 
-import www.ning.com.ningdic.Bean.FavoriteBean;
+import sg.edu.rp.singlish.Bean.FavoriteBean;
+import sg.edu.rp.singlish.Utils.LoadFiles;
 import www.ning.com.ningdic.R;
-import www.ning.com.ningdic.Utils.LoadFiles;
 
 
 public class DetailAty extends AppCompatActivity {
@@ -39,36 +39,7 @@ public class DetailAty extends AppCompatActivity {
         title = (TextView) findViewById(R.id.detail_title);
         defi = (TextView) findViewById(R.id.detail_definition);
         content = (TextView) findViewById(R.id.detail_content);
-        loadData();
-        initEvent();
-    }
 
-    private void initEvent() {
-        iv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                DetailAty.this.finish();
-            }
-        });
-        fav_star.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (check == true) {
-                    fav_star.setImageResource(R.mipmap.without_star);
-                    DataSupport.deleteAll(FavoriteBean.class, "name=?", thisTitle);
-                    check = false;
-                } else if (check == false) {
-                    fav_star.setImageResource(R.mipmap.bein_star);
-                    FavoriteBean favBean = new FavoriteBean();
-                    favBean.setName(thisTitle);
-                    favBean.save();
-                    check = true;
-                }
-            }
-        });
-    }
-
-    private void loadData() {
         InputStream inputStream = getResources().openRawResource(R.raw.a);
         try {
             JSONObject obj = new JSONObject(LoadFiles.getString(inputStream));
@@ -97,14 +68,35 @@ public class DetailAty extends AppCompatActivity {
                 }
 
             }
-
-
-
-
         } catch (JSONException e) {
             e.printStackTrace();
         }
+
+        iv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DetailAty.this.finish();
+            }
+        });
+        fav_star.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (check == true) {
+                    fav_star.setImageResource(R.mipmap.without_star);
+                    DataSupport.deleteAll(FavoriteBean.class, "name=?", thisTitle);
+                    check = false;
+                } else if (check == false) {
+                    fav_star.setImageResource(R.mipmap.bein_star);
+                    FavoriteBean favBean = new FavoriteBean();
+                    favBean.setName(thisTitle);
+                    favBean.save();
+                    check = true;
+                }
+            }
+        });
     }
+
+
 
 
 }

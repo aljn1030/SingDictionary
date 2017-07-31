@@ -1,4 +1,4 @@
-package www.ning.com.ningdic;
+package sg.edu.rp.singlish.Bean;
 
 import org.litepal.LitePalApplication;
 

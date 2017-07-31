@@ -1,4 +1,4 @@
-package www.ning.com.ningdic.Aty;
+package sg.edu.rp.singlish;
 
 import android.app.Fragment;
 import android.content.Intent;
@@ -20,8 +20,8 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
+import sg.edu.rp.singlish.Utils.LoadFiles;
 import www.ning.com.ningdic.R;
-import www.ning.com.ningdic.Utils.LoadFiles;
 
 /**
  * Created by win10 on 2017/1/8.
@@ -37,14 +37,8 @@ public class ListFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.list_page, null);
-        findView();
-        loadData();
-        init();
-        initEvent();
-        return view;
-    }
+        lv = (ListView) view.findViewById(R.id.listview_list);
 
-    private void loadData() {
         list = new ArrayList<>();
         InputStream inputStream = getResources().openRawResource(R.raw.a);
         try {
@@ -59,9 +53,6 @@ public class ListFragment extends Fragment {
             e.printStackTrace();
         }
 
-    }
-
-    private void init() {
         adapter = new BaseAdapter() {
             @Override
             public int getCount() {
@@ -88,15 +79,6 @@ public class ListFragment extends Fragment {
             }
         };
         lv.setAdapter(adapter);
-    }
-
-
-    private void findView() {
-        lv = (ListView) view.findViewById(R.id.listview_list);
-
-    }
-
-    private void initEvent() {
 
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -106,6 +88,8 @@ public class ListFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
+        return view;
     }
 
 

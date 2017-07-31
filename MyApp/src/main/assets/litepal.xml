@@ -32,6 +32,6 @@
         </list>
     -->
     <list>
-        <mapping class="www.ning.com.ningdic.Bean.FavoriteBean"></mapping>
+        <mapping class="sg.edu.rp.singlish.Bean.FavoriteBean"></mapping>
     </list>
 </litepal>

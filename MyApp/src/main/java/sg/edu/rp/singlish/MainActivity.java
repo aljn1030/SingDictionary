@@ -1,4 +1,4 @@
-package www.ning.com.ningdic.Aty;
+package sg.edu.rp.singlish;
 
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
