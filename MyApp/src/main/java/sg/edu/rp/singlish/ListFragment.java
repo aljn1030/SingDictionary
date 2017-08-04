@@ -23,9 +23,7 @@ import java.util.List;
 import sg.edu.rp.singlish.Utils.LoadFiles;
 import www.ning.com.ningdic.R;
 
-/**
- * Created by win10 on 2017/1/8.
- */
+
 public class ListFragment extends Fragment {
     private List<String> list;
     private BaseAdapter adapter;

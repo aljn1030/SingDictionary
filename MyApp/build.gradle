@@ -1,14 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-    signingConfigs {
-        bugengDictionary {
-            keyAlias 'bugeng'
-            keyPassword 'bugeng'
-            storeFile file('C:/Users/win10/.android/debug.keystore.jks')
-            storePassword 'bugeng'
-        }
-    }
+
     compileSdkVersion 24
     buildToolsVersion '25.0.0'
     defaultConfig {

@@ -1,4 +1,4 @@
-package sg.edu.rp.singlish.Bean;
+package sg.edu.rp.singlish;
 
 import org.litepal.LitePalApplication;
 

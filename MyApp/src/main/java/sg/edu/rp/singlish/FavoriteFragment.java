@@ -21,13 +21,10 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-import sg.edu.rp.singlish.Bean.FavoriteBean;
 import sg.edu.rp.singlish.Utils.LoadFiles;
 import www.ning.com.ningdic.R;
 
-/**
- * Created by win10 on 2017/1/8.
- */
+
 public class FavoriteFragment extends Fragment {
     private List<String> list;
     private ListView lv;
@@ -70,7 +67,8 @@ public class FavoriteFragment extends Fragment {
         };
         lv.setAdapter(adapter);
 
-        List<FavoriteBean> favData = DataSupport.findAll(FavoriteBean.class);
+
+        List<Favorite> favData = DataSupport.findAll(Favorite.class);
         InputStream inputStream = getResources().openRawResource(R.raw.a);
         try {
             JSONObject obj = new JSONObject(LoadFiles.getString(inputStream));
@@ -97,8 +95,15 @@ public class FavoriteFragment extends Fragment {
             }
         });
 
+
         return view;
+
+
+
+
     }
+
+
 
 
 }

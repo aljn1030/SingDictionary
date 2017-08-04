@@ -1,7 +1,7 @@
-package sg.edu.rp.singlish.Bean;
+package sg.edu.rp.singlish;
 
 
-public class ListBean {
+public class List {
     String name;
     String definition;
     String content;

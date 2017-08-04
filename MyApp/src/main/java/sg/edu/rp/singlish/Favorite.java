@@ -1,10 +1,10 @@
-package sg.edu.rp.singlish.Bean;
+package sg.edu.rp.singlish;
 
 import org.litepal.annotation.Column;
 import org.litepal.crud.DataSupport;
 
 
-public class FavoriteBean extends DataSupport {
+public class Favorite extends DataSupport {
     @Column(unique = true, defaultValue = "unknown")
     private String name;
 

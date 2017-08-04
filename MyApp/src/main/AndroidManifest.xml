@@ -3,7 +3,7 @@
     package="www.ning.com.ningdic">
 
     <application
-        android:name="sg.edu.rp.singlish.Bean.LitepalApp"
+        android:name="sg.edu.rp.singlish.LitepalApp"
         android:allowBackup="true"
 
         android:label="@string/app_name"

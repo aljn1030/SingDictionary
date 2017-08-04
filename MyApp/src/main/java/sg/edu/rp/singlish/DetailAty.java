@@ -16,7 +16,6 @@ import org.litepal.crud.DataSupport;
 import java.io.InputStream;
 import java.util.List;
 
-import sg.edu.rp.singlish.Bean.FavoriteBean;
 import sg.edu.rp.singlish.Utils.LoadFiles;
 import www.ning.com.ningdic.R;
 
@@ -54,8 +53,8 @@ public class DetailAty extends AppCompatActivity {
                     thisTitle = str_name;
                     defi.setText(str_defi);
                     content.setText(str_content);
-                    //TODO 通过数据库判断是否收藏过
-                    List<FavoriteBean> findTitle = DataSupport.where("name=?", thisTitle).find(FavoriteBean.class);
+                   //panduan
+                    List<Favorite> findTitle = DataSupport.where("name=?", thisTitle).find(Favorite.class);
 
                     if (findTitle.size()==0) {
                         fav_star.setImageResource(R.mipmap.without_star);
@@ -83,11 +82,11 @@ public class DetailAty extends AppCompatActivity {
             public void onClick(View v) {
                 if (check == true) {
                     fav_star.setImageResource(R.mipmap.without_star);
-                    DataSupport.deleteAll(FavoriteBean.class, "name=?", thisTitle);
+                    DataSupport.deleteAll(Favorite.class, "name=?", thisTitle);
                     check = false;
                 } else if (check == false) {
                     fav_star.setImageResource(R.mipmap.bein_star);
-                    FavoriteBean favBean = new FavoriteBean();
+                    Favorite favBean = new Favorite();
                     favBean.setName(thisTitle);
                     favBean.save();
                     check = true;

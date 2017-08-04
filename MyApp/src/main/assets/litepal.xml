@@ -32,6 +32,6 @@
         </list>
     -->
     <list>
-        <mapping class="sg.edu.rp.singlish.Bean.FavoriteBean"></mapping>
+        <mapping class="sg.edu.rp.singlish.Favorite"></mapping>
     </list>
 </litepal>
